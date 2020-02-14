@@ -3,6 +3,7 @@
 function setup() {
   // put setup code here
   createCanvas(640, 480);
+  print("Hello");
 }
 
 function draw() {
