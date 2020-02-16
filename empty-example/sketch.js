@@ -13,8 +13,8 @@ function draw() {
   // put drawing code here
   
   // set background
-  let r = map(mouseX, 0, 640, 0, 255)
-  let g = map(mouseY, 0, 480, 0, 255)
+  let r = map(mouseX, 0, width, 0, 255)
+  let g = map(mouseY, 0, height, 0, 255)
   background(r, g, 0);
   
   // draw ellipse
