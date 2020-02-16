@@ -5,16 +5,21 @@ function setup() {
   
   createCanvas(640, 480);
   // print("Hello");
-  background(220, 0, 0);
+  // background(220, 0, 0);
 }
+
 
 function draw() {
   // put drawing code here
   
+  // set background
+  let r = map(mouseX, 0, 640, 0, 255)
+  let g = map(mouseY, 0, 480, 0, 255)
+  background(r, g, 0);
   
   // draw ellipse
   noStroke();
-  fill(255, 255, 255, 50);
+  // fill(255, 255, 255, 50);
   ellipse(mouseX, mouseY, 20, 20);
   
   // if (mouseIsPressed) {
