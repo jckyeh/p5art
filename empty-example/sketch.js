@@ -10,8 +10,8 @@ function setup() {
 
 function draw() {
   // put drawing code here
-
-
+  
+  
   // draw ellipse
   noStroke();
   fill(255, 255, 255, 50);
@@ -23,4 +23,11 @@ function draw() {
   //   fill(255);
   // }
   // ellipse(mouseX, mouseY, 80, 80);
+}
+    
+function mousePressed() {
+  background(220, 0, 0);
+
+  fill(0, 0, 0);
+  ellipse(mouseX, mouseY, 20, 20);
 }
