@@ -5,7 +5,7 @@ function setup() {
   
   createCanvas(640, 480);
   // print("Hello");
-  // background(220, 0, 0);
+  background(0, 0, 0);
 }
 
 
@@ -13,14 +13,19 @@ function draw() {
   // put drawing code here
   
   // set background
-  let r = map(mouseX, 0, width, 0, 255)
-  let g = map(mouseY, 0, height, 0, 255)
-  background(r, g, 0);
+  // let r = map(mouseX, 0, width, 0, 255)
+  // let g = map(mouseY, 0, height, 0, 255)
+  // background(r, g, 0);
   
   // draw ellipse
-  noStroke();
+  // noStroke();
   // fill(255, 255, 255, 50);
-  ellipse(mouseX, mouseY, 20, 20);
+  // ellipse(mouseX, mouseY, 20, 20);
+
+  // random ellipses appear
+  noStroke()
+  fill(random(0, 255), random(0, 255), random(0, 255), 100)
+  ellipse(random(0, width), random(0, height), 20, 20)
   
   // if (mouseIsPressed) {
   //   fill(0);
