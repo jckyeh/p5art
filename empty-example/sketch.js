@@ -18,14 +18,14 @@ function draw() {
   // background(r, g, 0);
   
   // draw ellipse
-  // noStroke();
-  // fill(255, 255, 255, 50);
-  // ellipse(mouseX, mouseY, 20, 20);
+  noStroke();
+  fill(255, 255, 255, 50);
+  ellipse(mouseX, mouseY, 20, 20);
 
   // random ellipses appear
-  noStroke()
-  fill(random(0, 255), random(0, 255), random(0, 255), 100)
-  ellipse(random(0, width), random(0, height), 20, 20)
+  // noStroke()
+  // fill(random(0, 255), random(0, 255), random(0, 255), 100)
+  // ellipse(random(0, width), random(0, height), 20, 20)
   
   // if (mouseIsPressed) {
   //   fill(0);
@@ -36,7 +36,7 @@ function draw() {
 }
     
 function mousePressed() {
-  background(220, 0, 0);
+  background(0, 0, 0);
 
   fill(0, 0, 0);
   ellipse(mouseX, mouseY, 20, 20);
