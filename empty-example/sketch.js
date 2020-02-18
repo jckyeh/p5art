@@ -10,7 +10,7 @@ let increment = 6;
 function setup() {
   // put setup code here
   
-  createCanvas(640, 480);
+  createCanvas(600, 400);
   // print("Hello");
   // background(0, 0, 0);
 }
@@ -49,15 +49,26 @@ function draw() {
   // }
   // ellipse(mouseX, mouseY, 80, 80);
 
-  // ball bounce back
+  // // ball bounce back
+  // background(0);
+  // ellipse(circle.x, circle.y, circle.diameter, circle.diameter);
+  // if (circle.x >= (width - circle.diameter/2) 
+  //   || circle.x <= circle.diameter/2) {
+  //   increment = increment*-1;
+  // }
+  // circle.x = circle.x + increment;
+  // console.log(circle.x);
+
+  // Draw grid of ellipses
   background(0);
-  ellipse(circle.x, circle.y, circle.diameter, circle.diameter);
-  if (circle.x >= (width - circle.diameter/2) 
-    || circle.x <= circle.diameter/2) {
-    increment = increment*-1;
+  strokeWeight(4);
+  stroke(255);
+  for (let x=0; x<=width; x+=circle.diameter) {
+    for (let y=0; y<=height; y+=circle.diameter) {
+      fill(random(255), 0, random(255));
+      ellipse(x, y, circle.diameter/2, circle.diameter/2);
+    }
   }
-  circle.x = circle.x + increment;
-  console.log(circle.x);
 }
     
 // function mousePressed() {
